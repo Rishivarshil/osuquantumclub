@@ -1,0 +1,7 @@
+!pip install --upgrade pip
+!pip install --user yfinance
+!pip install --user pennylane
+!pip install --user "autoray==0.6.11"
+!pip install --user --upgrade scipy
+!pip install --user --upgrade numpy
+#must restart kernel before implementing this
