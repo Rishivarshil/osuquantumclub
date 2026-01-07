@@ -1,0 +1,14 @@
+OPENQASM 3.0;
+include "stdgates.inc";
+
+// Define qubits and classical bits
+qubit[2] q;
+bit[2] meas;
+
+// Step 1: Create entanglement
+h q[0];
+delay[500dt] q[1]; // Wait for 500 cycles on qubit 1
+cx q[0], q[1];
+
+// Step 2: Measurement
+meas = measure q;
